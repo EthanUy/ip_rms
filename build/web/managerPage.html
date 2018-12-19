@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<%
+    
+%>
+<html>
+    <head>
+        <title>
+            Manager Page
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        .btn-primary{
+            height:40px !important;
+        }
+    </style>
+    <body>
+        <div class='row'>
+            <div id='navBar-frame2'></div>
+        </div>
+        <div class='row'>
+            <div class='col-md-2 col-md-offset-1'>
+                <h3> Manager Name </h3> <br/>
+            </div>
+            <div class='col-md-8 col-md-offset-1'>
+                <div class='row'>
+                    <div class='col-md-1'>
+                        <button class='btn btn-primary'>
+                            <span class='glyphicon glyphicon-plus'></span> Add Project
+                        </button>
+                    </div>
+                    <div class='col-md-1 col-md-offset-1'>
+                        <button class='btn btn-primary'>
+                            <span>Edit Projects</span>
+                        </button>
+                    </div>
+                    <div class='col-md-1 col-md-offset-1'>
+                        <button class='btn btn-primary'>
+                            <span class='glyphicon glyphicon-plus'></span> Add Employee
+                        </button>
+                    </div>
+                </div>
+                <div class='row'>
+                    <h3>Projects</h3>
+                </div>
+                <div class='row' style='width:93%'>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Project</div>
+                        <div class="panel-body">
+                            <div class='col-md-3'>
+                                Build another menu
+                            </div>
+                            <div class='col-md-1 col-md-offset-5'>
+                                <button class='btn btn-primary'>
+                                    <span class='glyphicon glyphicon-plus'></span> Add task
+                                </button>
+                            </div>
+                            <div class='col-md-1 col-md-offset-1'>
+                                <button class='btn btn-primary'>
+                                    Change Status
+                                </button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class='row' style='width:93%'>
+                    <div class="panel panel-default">   
+                        <div class="panel-heading">Project 2</div>
+                        <div class="panel-body">
+                            <div class='col-md-3'>
+                                Build another menu
+                            </div>
+                            <div class='col-md-1 col-md-offset-5'>
+                                <button class='btn btn-primary'>
+                                    <span class='glyphicon glyphicon-plus'></span> Add task
+                                </button>
+                            </div>
+                            <div class='col-md-1 col-md-offset-1'>
+                                <button class='btn btn-primary'>
+                                    Change Status
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#navBar-frame2").load("nav2.html"); 
+    });
+</script>

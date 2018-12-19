@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>
+            Log in
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    
+    <style>
+        #login{
+            border-radius: 0px;
+            border-color: darkgray;
+            height: 40px;
+            background-color: darkgray;
+        }
+        #loginForm{
+            margin-top: 100px;
+        }
+        body{
+            background-image: url("images/loginbackground.jpg");
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <body>
+        <div class='row'>
+            <div id='navbar-frame'>
+            
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4 col-md-offset-4' style='text-align:center'>
+                <h1 style='text-align:center;color:aliceblue'> Resource Management System </h1>
+                <form id='loginForm' action='Login.jsp' method='POST'>    
+                    <div class='col-md-8 col-md-offset-2'>
+                        <input style='height:35px' type='text' class='form-control heightChange' placeholder='email' name="eml"> <br>
+                        <input style='height:35px' type='password' class='form-control heightChange' placeholder='password' name="pwd"> <br>
+                        <button type='submit' class='btn btn-success form-control' id='login'> Log in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#navbar-frame").load("nav.html"); 
+         
+        
+    });
+</script>

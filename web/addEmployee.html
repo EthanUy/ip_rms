@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>add employee</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        body{
+            background-image: url("images/loginbackground.jpg");
+        }
+        #register{
+            border-radius: 10px;
+            height: 50px;
+            background-color: darkgray;
+            border-color: darkgray;
+        }
+        #formContainer{
+            border-color: aliceblue;
+            color:black;
+            background-color: aliceblue;
+            opacity: 1.0;
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-right:20px;
+            padding-top: 35px;
+            padding-bottom: 45px;
+        }
+    </style>
+    <body>
+        <div class='row'>
+            <div id='navbar-frame'></div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4 col-md-offset-4' id="formContainer">
+         
+                <form action='addEmployee.jsp' method="POST">
+                        <h3 style="text-align:center;margin-bottom:45px;"> Add Employee </h3>
+                        <div class="form-group">
+                            <label for="name"> Name </label>
+                            <input class='form-control' type='text' placeholder="name" name="name" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact"> Contact </label>
+                            <input class='form-control' type='text' placeholder="contact" name="contact" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email </label>
+                            <input class='form-control' type='text' placeholder="email" name="email" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="role"> Role </label>
+                            <input class='form-control' type='text' name="role" required='required'>
+                        </div>
+                        <div class="form-group">
+                            <label for="password"> Password </label>
+                            <input class='form-control' type='password' name="password" required='required'>
+                        </div>
+                        <button id='register' class='form-control btn btn-primary' type='submit'> Register </button>
+                    </form>
+        
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    $(document).ready(function(){
+         $("#navbar-frame").load("nav.html"); 
+    });
+</script>
