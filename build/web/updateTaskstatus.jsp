@@ -40,7 +40,7 @@
     int i = DataAccess.updateTask(t);
 
     if(current.equals(TaskStatus.Completed)){
-        servlet.notifyProject(t.getProject_id());
+       // servlet.notifyProject(t.getProject_id());
     }
     
     if(i > 0){

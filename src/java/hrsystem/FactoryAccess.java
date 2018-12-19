@@ -21,6 +21,7 @@ public class FactoryAccess {
         factories.add(FieldEmployeeFactory.getInstance());
         factories.add(ManagerFactory.getInstance());
         factories.add(OfficeEmployeeFactory.getInstance());
+        factories.add(InternFactory.getInstance());
     }
     
     public static FactoryAccess getInstance(){
